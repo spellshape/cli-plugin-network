@@ -1,1 +1,1 @@
-# cli-plugin-network
+# magic-plugin-network
