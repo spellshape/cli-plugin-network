@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // ChainHome returns the default home dir used for a chain from SPN.

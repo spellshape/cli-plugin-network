@@ -6,11 +6,11 @@ import (
 	"os"
 	"path/filepath"
 
-	chaincmdrunner "github.com/ignite/cli/ignite/pkg/chaincmd/runner"
-	"github.com/ignite/cli/ignite/pkg/cosmosutil"
-	"github.com/ignite/cli/ignite/pkg/randstr"
-	"github.com/ignite/cli/ignite/pkg/xos"
-	"github.com/ignite/cli/ignite/services/chain"
+	chaincmdrunner "github.com/spellshape/cli/spellshape/pkg/chaincmd/runner"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
+	"github.com/spellshape/cli/spellshape/pkg/randstr"
+	"github.com/spellshape/cli/spellshape/pkg/xos"
+	"github.com/spellshape/cli/spellshape/services/chain"
 )
 
 const (

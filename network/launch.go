@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ignite/cli/ignite/pkg/events"
+	"github.com/spellshape/cli/spellshape/pkg/events"
 	launchtypes "github.com/tendermint/spn/x/launch/types"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // MinLaunchTimeOffset represents an offset used when minimum launch time is used

@@ -8,16 +8,16 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ignite/cli/ignite/pkg/cache"
-	"github.com/ignite/cli/ignite/pkg/cosmosutil"
-	cosmosgenesis "github.com/ignite/cli/ignite/pkg/cosmosutil/genesis"
-	"github.com/ignite/cli/ignite/pkg/events"
-	"github.com/ignite/cli/ignite/pkg/jsonfile"
 	"github.com/pelletier/go-toml"
 	"github.com/pkg/errors"
+	"github.com/spellshape/cli/spellshape/pkg/cache"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
+	cosmosgenesis "github.com/spellshape/cli/spellshape/pkg/cosmosutil/genesis"
+	"github.com/spellshape/cli/spellshape/pkg/events"
+	"github.com/spellshape/cli/spellshape/pkg/jsonfile"
 	launchtypes "github.com/tendermint/spn/x/launch/types"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // Prepare prepares the chain to be launched from genesis information.

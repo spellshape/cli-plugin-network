@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network"
 )
 
 func newNetworkChainShowPeers() *cobra.Command {

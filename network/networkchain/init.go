@@ -7,11 +7,11 @@ import (
 	"os"
 	"path/filepath"
 
-	chainconfig "github.com/ignite/cli/ignite/config/chain"
-	"github.com/ignite/cli/ignite/pkg/cache"
-	cosmosgenesis "github.com/ignite/cli/ignite/pkg/cosmosutil/genesis"
-	"github.com/ignite/cli/ignite/pkg/events"
-	"github.com/ignite/cli/ignite/services/chain"
+	chainconfig "github.com/spellshape/cli/spellshape/config/chain"
+	"github.com/spellshape/cli/spellshape/pkg/cache"
+	cosmosgenesis "github.com/spellshape/cli/spellshape/pkg/cosmosutil/genesis"
+	"github.com/spellshape/cli/spellshape/pkg/events"
+	"github.com/spellshape/cli/spellshape/services/chain"
 )
 
 // Init initializes blockchain by building the binaries and running the init command,
@@ -114,7 +114,7 @@ func (c *Chain) initGenesis(ctx context.Context) error {
 			return err
 		}
 
-		// TODO: use validator moniker https://github.com/ignite/cli/issues/1834
+		// TODO: use validator moniker https://github.com/spellshape/cli/issues/1834
 		if err := cmd.Init(ctx, "moniker"); err != nil {
 			return err
 		}
@@ -155,7 +155,7 @@ func (c *Chain) initGenesis(ctx context.Context) error {
 			return err
 		}
 
-		// TODO: use validator moniker https://github.com/ignite/cli/issues/1834
+		// TODO: use validator moniker https://github.com/spellshape/cli/issues/1834
 		if err := cmd.Init(ctx, "moniker"); err != nil {
 			return err
 		}

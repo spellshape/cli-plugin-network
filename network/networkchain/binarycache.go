@@ -1,10 +1,10 @@
 package networkchain
 
 import (
-	"github.com/ignite/cli/ignite/config"
-	"github.com/ignite/cli/ignite/pkg/checksum"
-	"github.com/ignite/cli/ignite/pkg/confile"
-	"github.com/ignite/cli/ignite/pkg/xfilepath"
+	"github.com/spellshape/cli/spellshape/config"
+	"github.com/spellshape/cli/spellshape/pkg/checksum"
+	"github.com/spellshape/cli/spellshape/pkg/confile"
+	"github.com/spellshape/cli/spellshape/pkg/xfilepath"
 )
 
 const (

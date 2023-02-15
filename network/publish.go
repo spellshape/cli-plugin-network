@@ -7,13 +7,13 @@ import (
 	"path/filepath"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	cosmosgenesis "github.com/ignite/cli/ignite/pkg/cosmosutil/genesis"
-	"github.com/ignite/cli/ignite/pkg/events"
+	cosmosgenesis "github.com/spellshape/cli/spellshape/pkg/cosmosutil/genesis"
+	"github.com/spellshape/cli/spellshape/pkg/events"
 	campaigntypes "github.com/tendermint/spn/x/campaign/types"
 	launchtypes "github.com/tendermint/spn/x/launch/types"
 	profiletypes "github.com/tendermint/spn/x/profile/types"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // publishOptions holds info about how to create a chain.

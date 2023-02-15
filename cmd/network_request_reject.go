@@ -1,12 +1,12 @@
 package cmd
 
 import (
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
-	"github.com/ignite/cli/ignite/pkg/numbers"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/numbers"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network"
 )
 
 // NewNetworkRequestReject creates a new request reject
@@ -18,7 +18,7 @@ func NewNetworkRequestReject() *cobra.Command {
 		Short:   "Reject requests",
 		Long: `The "reject" command is used by a chain's coordinator to reject requests.
 
-	ignite network request reject 42 1,2,3-6,7,8
+	spellshape network request reject 42 1,2,3-6,7,8
 
 The syntax of the "reject" command is similar to that of the "approve" command.
 `,

@@ -6,12 +6,12 @@ import (
 	"time"
 
 	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/entrywriter"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/entrywriter"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 var LaunchSummaryHeader = []string{
@@ -27,7 +27,7 @@ var LaunchSummaryAdvancedHeader = []string{
 	"reward",
 }
 
-// NewNetworkChainList returns a new command to list all published chains on Ignite.
+// NewNetworkChainList returns a new command to list all published chains on Spellshape.
 func NewNetworkChainList() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "list",

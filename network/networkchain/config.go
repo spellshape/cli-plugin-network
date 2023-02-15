@@ -3,8 +3,8 @@ package networkchain
 import (
 	"path/filepath"
 
-	"github.com/ignite/cli/ignite/pkg/confile"
-	"github.com/ignite/cli/ignite/pkg/cosmosutil"
+	"github.com/spellshape/cli/spellshape/pkg/confile"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
 )
 
 const (

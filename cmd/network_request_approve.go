@@ -1,13 +1,13 @@
 package cmd
 
 import (
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
-	"github.com/ignite/cli/ignite/pkg/numbers"
 	"github.com/pkg/errors"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/numbers"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network"
 )
 
 const (
@@ -25,19 +25,19 @@ func NewNetworkRequestApprove() *cobra.Command {
 Multiple requests can be approved using a comma-separated list and/or using a
 dash syntax.
 
-	ignite network request approve 42 1,2,3-6,7,8
+	spellshape network request approve 42 1,2,3-6,7,8
 
 The command above approves requests with IDs from 1 to 8 included on a chain
 with a launch ID 42.
 
-When requests are approved Ignite applies the requested changes and simulates
+When requests are approved Spellshape applies the requested changes and simulates
 initializing and launching the chain locally. If the chain starts successfully,
 requests are considered to be "verified" and are approved. If one or more
 requested changes stop the chain from launching locally, the verification
 process fails and the approval of all requests is canceled. To skip the
 verification process use the "--no-verification" flag.
 
-Note that Ignite will try to approve requests in the same order as request IDs
+Note that Spellshape will try to approve requests in the same order as request IDs
 are submitted to the "approve" command.`,
 		RunE: networkRequestApproveHandler,
 		Args: cobra.ExactArgs(2),

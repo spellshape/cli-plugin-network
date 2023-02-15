@@ -9,9 +9,9 @@ import (
 
 	coretypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	cosmosaccount "github.com/ignite/cli/ignite/pkg/cosmosaccount"
+	cosmosaccount "github.com/spellshape/cli/spellshape/pkg/cosmosaccount"
 
-	cosmosclient "github.com/ignite/cli/ignite/pkg/cosmosclient"
+	cosmosclient "github.com/spellshape/cli/spellshape/pkg/cosmosclient"
 
 	mock "github.com/stretchr/testify/mock"
 

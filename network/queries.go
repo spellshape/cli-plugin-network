@@ -7,15 +7,15 @@ import (
 	"sync"
 
 	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/ignite/cli/ignite/pkg/cosmoserror"
-	"github.com/ignite/cli/ignite/pkg/events"
 	"github.com/pkg/errors"
+	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
+	"github.com/spellshape/cli/spellshape/pkg/events"
 	campaigntypes "github.com/tendermint/spn/x/campaign/types"
 	launchtypes "github.com/tendermint/spn/x/launch/types"
 	rewardtypes "github.com/tendermint/spn/x/reward/types"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // ErrObjectNotFound is returned when the query returns a not found error.

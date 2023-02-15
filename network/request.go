@@ -5,12 +5,12 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
-	"github.com/ignite/cli/ignite/pkg/cosmosutil"
-	"github.com/ignite/cli/ignite/pkg/events"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
+	"github.com/spellshape/cli/spellshape/pkg/events"
 	launchtypes "github.com/tendermint/spn/x/launch/types"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // Reviewal keeps a request's reviewal.

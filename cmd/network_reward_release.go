@@ -5,19 +5,19 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	ignitecmd "github.com/ignite/cli/ignite/cmd"
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
-	"github.com/ignite/cli/ignite/pkg/cosmosaccount"
-	"github.com/ignite/cli/ignite/pkg/cosmosclient"
-	"github.com/ignite/cli/ignite/pkg/relayer"
-	relayerconf "github.com/ignite/cli/ignite/pkg/relayer/config"
-	"github.com/ignite/cli/ignite/pkg/xurl"
 	"github.com/pkg/errors"
+	spellshapecmd "github.com/spellshape/cli/spellshape/cmd"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosaccount"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosclient"
+	"github.com/spellshape/cli/spellshape/pkg/relayer"
+	relayerconf "github.com/spellshape/cli/spellshape/pkg/relayer/config"
+	"github.com/spellshape/cli/spellshape/pkg/xurl"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 const (
@@ -63,7 +63,7 @@ func networkRewardRelease(cmd *cobra.Command, args []string) (err error) {
 	defer func() {
 		var accountErr *cosmosaccount.AccountDoesNotExistError
 		if errors.As(err, &accountErr) {
-			err = errors.Wrap(accountErr, `make sure to create or import your account through "ignite account" commands`)
+			err = errors.Wrap(accountErr, `make sure to create or import your account through "spellshape account" commands`)
 		}
 	}()
 
@@ -131,11 +131,11 @@ func networkRewardRelease(cmd *cobra.Command, args []string) (err error) {
 
 	r := relayer.New(ca)
 	// initialize the chains
-	spnChain, err := ignitecmd.InitChain(
+	spnChain, err := spellshapecmd.InitChain(
 		cmd,
 		r,
 		session,
-		ignitecmd.RelayerSource,
+		spellshapecmd.RelayerSource,
 		getFrom(cmd),
 		spnAddresses.NodeAddress,
 		spnAddresses.FaucetAddress,
@@ -149,11 +149,11 @@ func networkRewardRelease(cmd *cobra.Command, args []string) (err error) {
 	}
 	spnChain.ID = spn.ChainID
 
-	testnetChain, err := ignitecmd.InitChain(
+	testnetChain, err := spellshapecmd.InitChain(
 		cmd,
 		r,
 		session,
-		ignitecmd.RelayerTarget,
+		spellshapecmd.RelayerTarget,
 		testnetAccount,
 		chainRPC,
 		testnetFaucet,

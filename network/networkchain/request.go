@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	cosmosgenesis "github.com/ignite/cli/ignite/pkg/cosmosutil/genesis"
-	"github.com/ignite/cli/ignite/pkg/events"
 	"github.com/pkg/errors"
+	cosmosgenesis "github.com/spellshape/cli/spellshape/pkg/cosmosutil/genesis"
+	"github.com/spellshape/cli/spellshape/pkg/events"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // CheckRequestChangeParam builds the genesis for the chain from the launch approved requests.

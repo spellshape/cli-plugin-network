@@ -1,14 +1,14 @@
 package cmd
 
 import (
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/yaml"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/yaml"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network"
 )
 
-// NewNetworkProjectShow returns a new command to show published project on Ignite.
+// NewNetworkProjectShow returns a new command to show published project on Spellshape.
 func NewNetworkProjectShow() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "show [project-id]",

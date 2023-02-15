@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ignite/cli/ignite/pkg/cosmoserror"
+	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
 	monitoringctypes "github.com/tendermint/spn/x/monitoringc/types"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // CreateClient send create client message to SPN.

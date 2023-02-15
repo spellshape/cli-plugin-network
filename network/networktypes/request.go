@@ -6,8 +6,8 @@ import (
 	launchtypes "github.com/tendermint/spn/x/launch/types"
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
-	"github.com/ignite/cli/ignite/pkg/cosmosutil"
-	"github.com/ignite/cli/ignite/pkg/xtime"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
+	"github.com/spellshape/cli/spellshape/pkg/xtime"
 )
 
 type (

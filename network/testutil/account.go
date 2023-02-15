@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ignite/cli/ignite/pkg/cosmosaccount"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosaccount"
 )
 
 const (
