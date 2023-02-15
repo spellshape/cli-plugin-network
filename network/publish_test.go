@@ -9,15 +9,15 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/ignite/cli/ignite/pkg/cosmoserror"
+	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	campaigntypes "github.com/tendermint/spn/x/campaign/types"
 	launchtypes "github.com/tendermint/spn/x/launch/types"
 	profiletypes "github.com/tendermint/spn/x/profile/types"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
-	"github.com/ignite/cli-plugin-network/network/testutil"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/testutil"
 )
 
 func startGenesisTestServer(filepath string) *httptest.Server {

@@ -10,17 +10,17 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
-	chainconfig "github.com/ignite/cli/ignite/config/chain"
-	"github.com/ignite/cli/ignite/pkg/cache"
-	"github.com/ignite/cli/ignite/pkg/chaincmd"
-	"github.com/ignite/cli/ignite/pkg/checksum"
-	"github.com/ignite/cli/ignite/pkg/cosmosaccount"
-	"github.com/ignite/cli/ignite/pkg/events"
-	"github.com/ignite/cli/ignite/pkg/gitpod"
-	"github.com/ignite/cli/ignite/services/chain"
+	chainconfig "github.com/spellshape/cli/spellshape/config/chain"
+	"github.com/spellshape/cli/spellshape/pkg/cache"
+	"github.com/spellshape/cli/spellshape/pkg/chaincmd"
+	"github.com/spellshape/cli/spellshape/pkg/checksum"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosaccount"
+	"github.com/spellshape/cli/spellshape/pkg/events"
+	"github.com/spellshape/cli/spellshape/pkg/gitpod"
+	"github.com/spellshape/cli/spellshape/services/chain"
 	"github.com/tendermint/spn/pkg/chainid"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // Chain represents a network blockchain and lets you interact with its source code and binary.

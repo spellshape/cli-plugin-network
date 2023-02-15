@@ -1,11 +1,11 @@
 package cmd
 
 import (
-	"github.com/ignite/cli/ignite/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
-	"github.com/ignite/cli-plugin-network/network/networkchain"
+	"github.com/spellshape/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network/networkchain"
 )
 
 // NewNetworkRequestChangeParam creates a new command to send param change request.

@@ -1,12 +1,12 @@
 package cmd
 
 import (
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cosmosutil"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // NewNetworkRequestRemoveValidator creates a new command to send remove validator request.
@@ -41,7 +41,7 @@ func networkRequestRemoveValidatorHandler(cmd *cobra.Command, args []string) err
 		return err
 	}
 
-	// get the address for the account and change the prefix for Ignite Chain
+	// get the address for the account and change the prefix for Spellshape Chain
 	address, err := cosmosutil.ChangeAddressPrefix(args[1], networktypes.SPN)
 	if err != nil {
 		return err

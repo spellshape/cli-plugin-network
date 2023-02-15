@@ -3,20 +3,20 @@ package cmd
 import (
 	"path/filepath"
 
-	"github.com/ignite/cli/ignite/config"
-	"github.com/ignite/cli/ignite/pkg/cache"
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cosmosaccount"
-	"github.com/ignite/cli/ignite/pkg/cosmosclient"
-	"github.com/ignite/cli/ignite/pkg/events"
-	"github.com/ignite/cli/ignite/pkg/gitpod"
 	"github.com/pkg/errors"
+	"github.com/spellshape/cli/spellshape/config"
+	"github.com/spellshape/cli/spellshape/pkg/cache"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosaccount"
+	"github.com/spellshape/cli/spellshape/pkg/cosmosclient"
+	"github.com/spellshape/cli/spellshape/pkg/events"
+	"github.com/spellshape/cli/spellshape/pkg/gitpod"
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"
 
-	"github.com/ignite/cli-plugin-network/network"
-	"github.com/ignite/cli-plugin-network/network/networkchain"
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network/networkchain"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 var (
@@ -48,8 +48,8 @@ const (
 	flagSPNNodeAddress   = "spn-node-address"
 	flagSPNFaucetAddress = "spn-faucet-address"
 
-	spnNodeAddressNightly   = "https://rpc.devnet.ignite.com:443"
-	spnFaucetAddressNightly = "https://faucet.devnet.ignite.com:443"
+	spnNodeAddressNightly   = "https://rpc.devnet.spellshape.com:443"
+	spnFaucetAddressNightly = "https://faucet.devnet.spellshape.com:443"
 
 	spnNodeAddressLocal   = "http://0.0.0.0:26661"
 	spnFaucetAddressLocal = "http://0.0.0.0:4502"
@@ -63,11 +63,11 @@ func NewNetwork() *cobra.Command {
 		Aliases: []string{"n"},
 		Short:   "Launch a blockchain in production",
 		Long: `
-Ignite Network commands allow to coordinate the launch of sovereign Cosmos blockchains.
+Spellshape Network commands allow to coordinate the launch of sovereign Cosmos blockchains.
 
 To launch a Cosmos blockchain you need someone to be a coordinator and others to
 be validators. These are just roles, anyone can be a coordinator or a validator.
-A coordinator publishes information about a chain to be launched on the Ignite
+A coordinator publishes information about a chain to be launched on the Spellshape
 blockchain, approves validator requests and coordinates the launch. Validators
 send requests to join a chain and start their nodes when a blockchain is ready
 for launch.
@@ -75,7 +75,7 @@ for launch.
 To publish the information about your chain as a coordinator run the following
 command (the URL should point to a repository with a Cosmos SDK chain):
 
-	ignite network chain publish github.com/ignite/example
+	spellshape network chain publish github.com/spellshape/example
 
 This command will return a launch identifier you will be using in the following
 commands. Let's say this identifier is 42.
@@ -84,26 +84,26 @@ Next, ask validators to initialize their nodes and request to join the network
 as validators. For a testnet you can use the default values suggested by the
 CLI.
 
-	ignite network chain init 42
+	spellshape network chain init 42
 
-	ignite network chain join 42 --amount 95000000stake
+	spellshape network chain join 42 --amount 95000000stake
 
 As a coordinator list all validator requests:
 
-	ignite network request list 42
+	spellshape network request list 42
 
 Approve validator requests:
 
-	ignite network request approve 42 1,2
+	spellshape network request approve 42 1,2
 
 Once you've approved all validators you need in the validator set, announce that
 the chain is ready for launch:
 
-	ignite network chain launch 42
+	spellshape network chain launch 42
 
 Validators can now prepare their nodes for launch:
 
-	ignite network chain prepare 42
+	spellshape network chain prepare 42
 
 The output of this command will show a command that a validator would use to
 launch their node, for example “exampled --home ~/.example”. After enough
@@ -202,7 +202,7 @@ func (n NetworkBuilder) Network(options ...network.Option) (network.Network, err
 	if from != "" {
 		account, err = cosmos.AccountRegistry.GetByName(getFrom(n.cmd))
 		if err != nil {
-			return network.Network{}, errors.Wrap(err, "make sure that this account exists, use 'ignite account -h' to manage accounts")
+			return network.Network{}, errors.Wrap(err, "make sure that this account exists, use 'spellshape account -h' to manage accounts")
 		}
 	}
 
@@ -262,7 +262,7 @@ func newCache(cmd *cobra.Command) (cache.Storage, error) {
 		return cache.Storage{}, err
 	}
 
-	const cacheFileName = "ignite_network_cache.db"
+	const cacheFileName = "spellshape_network_cache.db"
 	storage, err := cache.NewStorage(filepath.Join(cacheRootDir, cacheFileName))
 	if err != nil {
 		return cache.Storage{}, err

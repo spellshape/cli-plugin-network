@@ -4,18 +4,18 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/cliquiz"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
-	"github.com/ignite/cli/ignite/pkg/gitpod"
-	"github.com/ignite/cli/ignite/pkg/xchisel"
 	"github.com/manifoldco/promptui"
 	"github.com/pkg/errors"
 	"github.com/rdegges/go-ipify"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/cliquiz"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/gitpod"
+	"github.com/spellshape/cli/spellshape/pkg/xchisel"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
-	"github.com/ignite/cli-plugin-network/network/networkchain"
+	"github.com/spellshape/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network/networkchain"
 )
 
 const (
@@ -34,7 +34,7 @@ func NewNetworkChainJoin() *cobra.Command {
 		Long: `The "join" command is used by validators to send a request to join a blockchain.
 The required argument is a launch ID of a blockchain. The "join" command expects
 that the validator has already setup a home directory for the blockchain and has
-a gentx either by running "ignite network chain init" or initializing the data
+a gentx either by running "spellshape network chain init" or initializing the data
 directory manually with the chain's binary.
 
 By default the "join" command just sends the request to join as a validator.
@@ -45,15 +45,15 @@ The following command will send a request to join blockchain with launch ID 42
 as a validator and request to be added as an account with a token balance of
 95000000 STAKE.
 
-	ignite network chain join 42 --amount 95000000stake
+	spellshape network chain join 42 --amount 95000000stake
 
-A request to join as a validator contains a gentx file. Ignite looks for gentx
-in a home directory used by "ignite network chain init" by default. To use a
+A request to join as a validator contains a gentx file. Spellshape looks for gentx
+in a home directory used by "spellshape network chain init" by default. To use a
 different directory, use the "--home" flag or pass a gentx file directly with
 the  "--gentx" flag.
 
-Since "join" broadcasts a transaction to the Ignite blockchain, you will need an
-account on the Ignite blockchain. During the testnet phase, however, Ignite
+Since "join" broadcasts a transaction to the Spellshape blockchain, you will need an
+account on the Spellshape blockchain. During the testnet phase, however, Spellshape
 automatically requests tokens from a faucet.`,
 		Args: cobra.ExactArgs(1),
 		RunE: networkChainJoinHandler,

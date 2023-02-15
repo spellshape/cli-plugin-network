@@ -3,11 +3,11 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/entrywriter"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/entrywriter"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 var ProjectSummaryHeader = []string{
@@ -17,7 +17,7 @@ var ProjectSummaryHeader = []string{
 	"mainnet id",
 }
 
-// NewNetworkProjectList returns a new command to list all published Projects on Ignite.
+// NewNetworkProjectList returns a new command to list all published Projects on Spellshape.
 func NewNetworkProjectList() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "list",

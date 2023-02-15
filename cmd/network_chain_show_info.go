@@ -3,11 +3,11 @@ package cmd
 import (
 	"errors"
 
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/yaml"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/yaml"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network"
 )
 
 func newNetworkChainShowInfo() *cobra.Command {

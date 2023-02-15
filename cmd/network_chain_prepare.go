@@ -4,18 +4,18 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/ignite/cli/ignite/pkg/cache"
-	"github.com/ignite/cli/ignite/pkg/chaincmd"
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/colors"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
-	"github.com/ignite/cli/ignite/pkg/gitpod"
-	"github.com/ignite/cli/ignite/pkg/goenv"
+	"github.com/spellshape/cli/spellshape/pkg/cache"
+	"github.com/spellshape/cli/spellshape/pkg/chaincmd"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/colors"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/gitpod"
+	"github.com/spellshape/cli/spellshape/pkg/goenv"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli-plugin-network/network"
-	"github.com/ignite/cli-plugin-network/network/networkchain"
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network"
+	"github.com/spellshape/cli-plugin-network/network/networkchain"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 const (
@@ -31,18 +31,18 @@ func NewNetworkChainPrepare() *cobra.Command {
 the final genesis and adding IP addresses of peers to the validator's
 configuration file.
 
-	ignite network chain prepare 42
+	spellshape network chain prepare 42
 
-By default, Ignite uses "$HOME/spn/LAUNCH_ID" as the data directory. If you used
+By default, Spellshape uses "$HOME/spn/LAUNCH_ID" as the data directory. If you used
 a different data directory when initializing the node, use the "--home" flag and
 set the correct path to the data directory.
 
-Ignite generates the genesis file in "config/genesis.json" and adds peer IPs by
+Spellshape generates the genesis file in "config/genesis.json" and adds peer IPs by
 modifying "config/config.toml".
 
 The prepare command should be executed after the coordinator has triggered the
-chain launch and finalized the genesis with "ignite network chain launch". You
-can force Ignite to run the prepare command without checking if the launch has
+chain launch and finalized the genesis with "spellshape network chain launch". You
+can force Spellshape to run the prepare command without checking if the launch has
 been triggered with the "--force" flag (this is not recommended).
 
 After the prepare command is executed the node is ready to be started.
@@ -139,7 +139,7 @@ func networkChainPrepareHandler(cmd *cobra.Command, args []string) error {
 	if gitpod.IsOnGitpod() {
 		// Gitpod requires to enable proxy-tunnel tool
 		commandStr = fmt.Sprintf(
-			"ignite network tool proxy-tunnel %s/spn.yml & %s",
+			"spellshape network tool proxy-tunnel %s/spn.yml & %s",
 			chainHome, commandStr,
 		)
 	}

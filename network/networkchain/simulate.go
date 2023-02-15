@@ -8,15 +8,15 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff"
-	"github.com/ignite/cli/ignite/pkg/availableport"
-	"github.com/ignite/cli/ignite/pkg/cache"
-	"github.com/ignite/cli/ignite/pkg/events"
-	"github.com/ignite/cli/ignite/pkg/httpstatuschecker"
-	"github.com/ignite/cli/ignite/pkg/xurl"
 	"github.com/pelletier/go-toml"
 	"github.com/pkg/errors"
+	"github.com/spellshape/cli/spellshape/pkg/availableport"
+	"github.com/spellshape/cli/spellshape/pkg/cache"
+	"github.com/spellshape/cli/spellshape/pkg/events"
+	"github.com/spellshape/cli/spellshape/pkg/httpstatuschecker"
+	"github.com/spellshape/cli/spellshape/pkg/xurl"
 
-	"github.com/ignite/cli-plugin-network/network/networktypes"
+	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
 
 // listeningTimeout is the maximum time to wait for the chain start.

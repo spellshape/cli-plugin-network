@@ -6,8 +6,8 @@ import (
 	"github.com/spf13/cobra"
 	profiletypes "github.com/tendermint/spn/x/profile/types"
 
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
 )
 
 // NewNetworkValidatorSet creates a command to set an information in a validator profile.
@@ -15,7 +15,7 @@ func NewNetworkValidatorSet() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "set details|identity|website|security [value]",
 		Short: "Set an information in a validator profile",
-		Long: `Validators on Ignite can set a profile containing a description for the validator.
+		Long: `Validators on Spellshape can set a profile containing a description for the validator.
 The validator set command allows to set information for the validator.
 The following information can be set:
 - details: general information about the validator.

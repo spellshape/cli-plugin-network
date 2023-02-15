@@ -6,8 +6,8 @@ import (
 	"github.com/spf13/cobra"
 	profiletypes "github.com/tendermint/spn/x/profile/types"
 
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
 )
 
 // NewNetworkCoordinatorSet creates a command to set an information in a coordinator profile.
@@ -15,7 +15,7 @@ func NewNetworkCoordinatorSet() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "set details|identity|website [value]",
 		Short: "Set an information in a coordinator profile",
-		Long: `Coordinators on Ignite can set a profile containing a description for the coordinator.
+		Long: `Coordinators on Spellshape can set a profile containing a description for the coordinator.
 The coordinator set command allows to set information for the coordinator.
 The following information can be set:
 - details: general information about the coordinator.

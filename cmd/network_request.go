@@ -11,7 +11,7 @@ func NewNetworkRequest() *cobra.Command {
 		Long: `The "request" namespace contains commands for creating, showing, approving, and
 rejecting requests.
 
-A request is mechanism in Ignite that allows changes to be made to the genesis
+A request is mechanism in Spellshape that allows changes to be made to the genesis
 file like adding accounts with token balances and validators. Anyone can submit
 a request, but only the coordinator of a chain can approve or reject a request.
 

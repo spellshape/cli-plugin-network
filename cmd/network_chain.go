@@ -11,9 +11,9 @@ func NewNetworkChain() *cobra.Command {
 		Use:   "chain",
 		Short: "Publish a chain, join as a validator and prepare node for launch",
 		Long: `The "chain" namespace features the most commonly used commands for launching
-blockchains with Ignite.
+blockchains with Spellshape.
 
-As a coordinator you "publish" your blockchain to Ignite. When enough validators
+As a coordinator you "publish" your blockchain to Spellshape. When enough validators
 are approved for the genesis and no changes are excepted to be made to the
 genesis, a coordinator announces that the chain is ready for launch with the
 "launch" command. In the case of an unsuccessful launch, the coordinator can revert it
@@ -29,7 +29,7 @@ install the chain's binary locally. The binary can be used, for example, to
 initialize a validator node or to interact with the chain after it has been
 launched.
 
-All chains published to Ignite can be listed by using the "list" command.
+All chains published to Spellshape can be listed by using the "list" command.
 `,
 	}
 

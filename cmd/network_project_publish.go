@@ -4,15 +4,15 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cobra"
 
-	"github.com/ignite/cli/ignite/pkg/cliui"
-	"github.com/ignite/cli/ignite/pkg/cliui/icons"
+	"github.com/spellshape/cli/spellshape/pkg/cliui"
+	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
 )
 
 const (
 	flagMetadata = "metadata"
 )
 
-// NewNetworkProjectPublish returns a new command to publish a new projects on Ignite.
+// NewNetworkProjectPublish returns a new command to publish a new projects on Spellshape.
 func NewNetworkProjectPublish() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "create [name] [total-supply]",

@@ -1,4 +1,4 @@
-module github.com/ignite/cli-plugin-network
+module github.com/spellshape/cli-plugin-network
 
 go 1.19
 
@@ -12,7 +12,7 @@ require (
 	github.com/goccy/go-yaml v1.9.7
 	github.com/golangci/golangci-lint v1.50.1
 	github.com/hashicorp/go-plugin v1.4.6
-	github.com/ignite/cli v0.25.3-0.20221216180535-bcbcd1d0bb57
+	github.com/spellshape/cli v0.25.3-0.20221216180535-bcbcd1d0bb57
 	github.com/manifoldco/promptui v0.9.0
 	github.com/pelletier/go-toml v1.9.5
 	github.com/pkg/errors v0.9.1
@@ -201,7 +201,7 @@ require (
 	github.com/hdevalence/ed25519consensus v0.0.0-20220222234857-c00d1f31bab3 // indirect
 	github.com/hexops/gotextdiff v1.0.3 // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
-	github.com/ignite/web v0.4.3 // indirect
+	github.com/spellshape/web v0.4.3 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
