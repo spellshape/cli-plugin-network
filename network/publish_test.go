@@ -10,11 +10,11 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
+	profiletypes "github.com/spellshape/network/x/profile/types"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
-	profiletypes "github.com/tendermint/spn/x/profile/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 	"github.com/spellshape/cli-plugin-network/network/testutil"

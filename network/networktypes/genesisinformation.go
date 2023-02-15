@@ -4,7 +4,7 @@ import (
 	"github.com/pkg/errors"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
 )
 
 // GenesisInformation represents all information for a chain to construct the genesis.

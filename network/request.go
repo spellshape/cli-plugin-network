@@ -8,7 +8,7 @@ import (
 	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
 	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
 	"github.com/spellshape/cli/spellshape/pkg/events"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )
@@ -63,7 +63,7 @@ func (n Network) Request(ctx context.Context, launchID, requestID uint64) (netwo
 }
 
 // RequestFromIDs fetches the chain requested from SPN by launch and provided request IDs
-// TODO: once implemented, use the SPN query from https://github.com/tendermint/spn/issues/420
+// TODO: once implemented, use the SPN query from https://github.com/spellshape/network/issues/420
 func (n Network) RequestFromIDs(ctx context.Context, launchID uint64, requestIDs ...uint64) (reqs []networktypes.Request, err error) {
 	for _, id := range requestIDs {
 		req, err := n.Request(ctx, launchID, id)

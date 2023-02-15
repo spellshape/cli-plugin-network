@@ -4,10 +4,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
-	profiletypes "github.com/tendermint/spn/x/profile/types"
-	rewardtypes "github.com/tendermint/spn/x/reward/types"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
+	profiletypes "github.com/spellshape/network/x/profile/types"
+	rewardtypes "github.com/spellshape/network/x/reward/types"
 )
 
 //go:generate mockery --name CampaignClient --case underscore --output ../mocks

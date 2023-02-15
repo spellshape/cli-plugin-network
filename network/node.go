@@ -10,8 +10,8 @@ import (
 	ibcconntypes "github.com/cosmos/ibc-go/v5/modules/core/03-connection/types"
 	ibcchanneltypes "github.com/cosmos/ibc-go/v5/modules/core/04-channel/types"
 	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
-	spntypes "github.com/tendermint/spn/pkg/types"
-	monitoringptypes "github.com/tendermint/spn/x/monitoringp/types"
+	spntypes "github.com/spellshape/network/pkg/types"
+	monitoringptypes "github.com/spellshape/network/x/monitoringp/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

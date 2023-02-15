@@ -5,7 +5,7 @@ import (
 	"errors"
 
 	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
-	monitoringctypes "github.com/tendermint/spn/x/monitoringc/types"
+	monitoringctypes "github.com/spellshape/network/x/monitoringc/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

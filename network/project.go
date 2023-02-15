@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
 	"github.com/spellshape/cli/spellshape/pkg/events"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

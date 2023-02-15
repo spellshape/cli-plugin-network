@@ -18,7 +18,7 @@ import (
 	"github.com/spellshape/cli/spellshape/pkg/events"
 	"github.com/spellshape/cli/spellshape/pkg/gitpod"
 	"github.com/spellshape/cli/spellshape/services/chain"
-	"github.com/tendermint/spn/pkg/chainid"
+	"github.com/spellshape/network/pkg/chainid"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

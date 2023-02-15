@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/mock"
-	"github.com/tendermint/spn/x/monitoringc/types"
+	"github.com/spellshape/network/x/monitoringc/types"
 	"google.golang.org/grpc"
 )
 

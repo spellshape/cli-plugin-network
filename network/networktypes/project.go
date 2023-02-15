@@ -2,7 +2,7 @@ package networktypes
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
 )
 
 // Project represents the project of a chain on SPN.

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/spellshape/cli/spellshape/pkg/events"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

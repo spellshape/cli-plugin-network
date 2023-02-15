@@ -9,8 +9,8 @@ import (
 	"github.com/spellshape/cli/spellshape/pkg/cliui"
 	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"
 	"github.com/spellshape/cli/spellshape/pkg/xurl"
+	"github.com/spellshape/network/pkg/chainid"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/spn/pkg/chainid"
 
 	"github.com/spellshape/cli-plugin-network/network"
 	"github.com/spellshape/cli-plugin-network/network/networkchain"

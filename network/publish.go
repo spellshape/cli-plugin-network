@@ -9,9 +9,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	cosmosgenesis "github.com/spellshape/cli/spellshape/pkg/cosmosutil/genesis"
 	"github.com/spellshape/cli/spellshape/pkg/events"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
-	profiletypes "github.com/tendermint/spn/x/profile/types"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
+	profiletypes "github.com/spellshape/network/x/profile/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

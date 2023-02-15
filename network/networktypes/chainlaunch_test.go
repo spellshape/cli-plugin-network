@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
+	launchtypes "github.com/spellshape/network/x/launch/types"
 	"github.com/stretchr/testify/require"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

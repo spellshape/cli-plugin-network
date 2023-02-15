@@ -6,7 +6,7 @@ import (
 	"context"
 
 	"github.com/stretchr/testify/mock"
-	"github.com/tendermint/spn/x/monitoringp/types"
+	"github.com/spellshape/network/x/monitoringp/types"
 	"google.golang.org/grpc"
 )
 

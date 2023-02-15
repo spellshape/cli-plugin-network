@@ -3,8 +3,8 @@ package cmd
 import (
 	"errors"
 
+	profiletypes "github.com/spellshape/network/x/profile/types"
 	"github.com/spf13/cobra"
-	profiletypes "github.com/tendermint/spn/x/profile/types"
 
 	"github.com/spellshape/cli/spellshape/pkg/cliui"
 	"github.com/spellshape/cli/spellshape/pkg/cliui/icons"

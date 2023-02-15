@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	yaml "github.com/goccy/go-yaml"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
 )
 
 type (

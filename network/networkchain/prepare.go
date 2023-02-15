@@ -15,7 +15,7 @@ import (
 	cosmosgenesis "github.com/spellshape/cli/spellshape/pkg/cosmosutil/genesis"
 	"github.com/spellshape/cli/spellshape/pkg/events"
 	"github.com/spellshape/cli/spellshape/pkg/jsonfile"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

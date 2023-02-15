@@ -10,9 +10,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
 	"github.com/spellshape/cli/spellshape/pkg/events"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
-	rewardtypes "github.com/tendermint/spn/x/reward/types"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
+	rewardtypes "github.com/spellshape/network/x/reward/types"
 	"golang.org/x/sync/errgroup"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"

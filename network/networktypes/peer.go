@@ -3,7 +3,7 @@ package networktypes
 import (
 	"strings"
 
-	launchtypes "github.com/tendermint/spn/x/launch/types"
+	launchtypes "github.com/spellshape/network/x/launch/types"
 
 	"github.com/spellshape/cli/spellshape/pkg/xurl"
 )

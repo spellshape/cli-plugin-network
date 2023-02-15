@@ -2,8 +2,8 @@ package networktypes
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
-	profiletypes "github.com/tendermint/spn/x/profile/types"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
+	profiletypes "github.com/spellshape/network/x/profile/types"
 )
 
 // Validator represents the Validator profile on SPN.

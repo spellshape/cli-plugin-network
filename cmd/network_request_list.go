@@ -5,8 +5,8 @@ import (
 
 	"github.com/spellshape/cli/spellshape/pkg/cliui"
 	"github.com/spellshape/cli/spellshape/pkg/cosmosutil"
+	launchtypes "github.com/spellshape/network/x/launch/types"
 	"github.com/spf13/cobra"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
 
 	"github.com/spellshape/cli-plugin-network/network"
 	"github.com/spellshape/cli-plugin-network/network/networktypes"

@@ -8,8 +8,8 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/spellshape/cli/spellshape/pkg/cosmoserror"
 	"github.com/spellshape/cli/spellshape/pkg/events"
-	campaigntypes "github.com/tendermint/spn/x/campaign/types"
-	profiletypes "github.com/tendermint/spn/x/profile/types"
+	campaigntypes "github.com/spellshape/network/x/campaign/types"
+	profiletypes "github.com/spellshape/network/x/profile/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 )

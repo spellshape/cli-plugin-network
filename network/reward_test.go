@@ -7,8 +7,8 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	rewardtypes "github.com/spellshape/network/x/reward/types"
 	"github.com/stretchr/testify/require"
-	rewardtypes "github.com/tendermint/spn/x/reward/types"
 
 	"github.com/spellshape/cli-plugin-network/network/networktypes"
 	"github.com/spellshape/cli-plugin-network/network/testutil"
